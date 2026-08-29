@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD Nurulla Mollick | Educator • Calligrapher • Photographer</title>
+<meta name="description" content="Portfolio of MD Nurulla Mollick — educator, calligrapher and photographer. Founder of WikiFizik Coaching Centre.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --emerald:#0e5c4a;
+  --emerald-dark:#083b30;
+  --gold:#c9a227;
+  --gold-light:#e6c65c;
+  --cream:#faf6ee;
+  --ink:#1f2a28;
+  --muted:#5b6b67;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.6;
+}
+.arabic{font-family:'Amiri',serif}
+
+/* ---------- Geometric Islamic pattern (subtle) ---------- */
+.pattern{
+  background-color:var(--emerald-dark);
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(201,162,39,.12) 2px, transparent 3px),
+    radial-gradient(circle at 75% 75%, rgba(201,162,39,.12) 2px, transparent 3px);
+  background-size:48px 48px;
+}
+
+/* ---------- Nav ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(8,59,48,.95);
+  backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.8rem 1.2rem;
+}
+nav .brand{color:var(--gold-light);font-weight:600;font-size:1.05rem}
+nav .brand .arabic{margin-right:.35rem}
+.nav-links{display:none;gap:1.4rem;list-style:none}
+.nav-links a{color:var(--cream);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--gold-light)}
+.menu-btn{background:none;border:1px solid var(--gold);color:var(--gold-light);
+  border-radius:8px;padding:.35rem .6rem;font-size:1.1rem;cursor:pointer}
+@media(min-width:768px){
+  .nav-links{display:flex}
+  .menu-btn{display:none}
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  text-align:center;color:var(--cream);
+  padding:4rem 1.2rem 4.5rem;
+  position:relative;overflow:hidden;
+}
+.hero .bismillah{font-size:1.5rem;color:var(--gold-light);margin-bottom:1rem;display:block}
+.hero .ornament{color:var(--gold);font-size:1.3rem;letter-spacing:.6em;margin-bottom:.5rem}
+.hero h1{font-size:clamp(1.9rem,6vw,3.2rem);font-weight:700;line-height:1.2}
+.hero h1 span{color:var(--gold-light)}
+.hero .roles{margin-top:.6rem;font-size:clamp(1rem,3.5vw,1.25rem);font-weight:300;color:#e9e2d0}
+.hero .roles b{color:var(--gold-light);font-weight:500}
+.hero .tag{margin-top:1.4rem;font-size:.95rem;color:#cfd8d4}
+.hero .cta{margin-top:2rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:.75rem 1.6rem;border-radius:999px;
+  text-decoration:none;font-weight:600;font-size:.95rem;transition:.25s;
+}
+.btn-gold{background:var(--gold);color:var(--emerald-dark)}
+.btn-gold:hover{background:var(--gold-light)}
+.btn-outline{border:1.5px solid var(--gold-light);color:var(--gold-light)}
+.btn-outline:hover{background:rgba(201,162,39,.15)}
+
+/* ---------- Sections ---------- */
+section{padding:3.5rem 1.2rem}
+.container{max-width:1000px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:2.5rem}
+.sec-head .arabic{color:var(--gold);font-size:1.4rem;display:block;margin-bottom:.3rem}
+.sec-head h2{font-size:clamp(1.6rem,5vw,2.3rem);color:var(--emerald-dark)}
+.sec-head .line{width:60px;height:3px;background:var(--gold);margin:.8rem auto 0;border-radius:2px}
+
+/* ---------- About ---------- */
+.about-card{
+  background:var(--white);border-radius:18px;padding:2rem 1.5rem;
+  box-shadow:0 10px 30px rgba(8,59,48,.08);
+  border-top:4px solid var(--gold);
+  max-width:720px;margin:0 auto;text-align:center;
+}
+.about-card p{color:var(--muted);font-size:1rem}
+.about-card .quote{font-family:'Amiri',serif;font-size:1.25rem;color:var(--emerald);
+  margin-top:1.2rem;font-style:italic}
+
+/* ---------- Cards grid ---------- */
+.grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{
+  background:var(--white);border-radius:16px;padding:1.8rem 1.4rem;text-align:center;
+  box-shadow:0 8px 24px rgba(8,59,48,.07);
+  transition:transform .25s, box-shadow .25s;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(8,59,48,.14)}
+.card .icon{font-size:2.2rem;margin-bottom:.6rem}
+.card h3{color:var(--emerald-dark);font-size:1.15rem;margin-bottom:.5rem}
+.card p{color:var(--muted);font-size:.92rem}
+
+/* ---------- Coaching banner ---------- */
+.coach{
+  background:linear-gradient(135deg,var(--emerald),var(--emerald-dark));
+  border-radius:20px;padding:2.5rem 1.5rem;text-align:center;color:var(--cream);
+  box-shadow:0 12px 32px rgba(8,59,48,.2);
+}
+.coach .arabic{color:var(--gold-light);font-size:1.3rem;display:block;margin-bottom:.4rem}
+.coach h3{font-size:clamp(1.4rem,5vw,2rem);margin-bottom:.5rem}
+.coach p{color:#dfe8e4;max-width:560px;margin:0 auto 1.4rem;font-size:.98rem}
+
+/* ---------- Social ---------- */
+.social-grid{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:640px){.social-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:960px){.social-grid{grid-template-columns:repeat(6,1fr)}}
+.social{
+  display:flex;flex-direction:column;align-items:center;gap:.5rem;
+  background:var(--white);border-radius:14px;padding:1.3rem .8rem;text-decoration:none;
+  box-shadow:0 6px 18px rgba(8,59,48,.07);transition:.25s;
+}
+.social:hover{transform:translateY(-5px);background:var(--emerald)}
+.social:hover .name{color:var(--cream)}
+.social .s-icon{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;color:#fff;font-size:1.3rem}
+.fb{background:#1877f2}.ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.x{background:#000}.tg{background:#229ed9}.in{background:#0a66c2}.wa{background:#25d366}
+.social .name{font-weight:600;font-size:.85rem;color:var(--ink)}
+.social .handle{font-size:.72rem;color:var(--muted)}
+.social:hover .handle{color:var(--gold-light)}
+
+/* ---------- Footer ---------- */
+footer{
+  background:var(--emerald-dark);color:#cfd8d4;text-align:center;
+  padding:2rem 1.2rem;font-size:.85rem;
+}
+footer .arabic{color:var(--gold-light);font-size:1.2rem;display:block;margin-bottom:.6rem}
+footer a{color:var(--gold-light);text-decoration:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="brand"><span class="arabic">نور</span>Nurulla Mollick</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#coaching">Coaching</a></li>
+    <li><a href="#connect">Connect</a></li>
+  </ul>
+  <button class="menu-btn" onclick="document.querySelector('.nav-links').style.display='flex';document.querySelector('.nav-links').style.flexDirection='column';document.querySelector('.nav-links').style.position='absolute';document.querySelector('.nav-links').style.top='100%';document.querySelector('.nav-links').style.left='0';document.querySelector('.nav-links').style.right='0';document.querySelector('.nav-links').style.background='#083b30';document.querySelector('.nav-links').style.padding='1rem';" aria-label="menu">☰</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero pattern">
+  <span class="bismillah arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+  <div class="ornament">✦ ✦ ✦</div>
+  <h1>MD <span>Nurulla Mollick</span></h1>
+  <p class="roles">Educator &nbsp;•&nbsp; <b>Calligrapher</b> &nbsp;•&nbsp; Photographer</p>
+  <p class="tag">Founder of WikiFizik Coaching Centre — blending knowledge, art &amp; faith.</p>
+  <div class="cta">
+    <a class="btn btn-gold" href="#connect">Connect With Me</a>
+    <a class="btn btn-outline" href="https://www.wikifizik.co.in" target="_blank" rel="noopener">Visit WikiFizik</a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head">
+      <span class="arabic">من أنا</span>
+      <h2>About Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="about-card">
+      <p>I'm <strong>MD Nurulla Mollick</strong> — an educator who believes in learning through inspiration, a calligrapher devoted to the beauty of the Arabic script, and a photographer who captures stories of people and places. I founded <strong>WikiFizik</strong>, a coaching centre dedicated to making physics approachable and joyful for students.</p>
+      <p class="quote">"Knowledge is the light of the believer."</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / SKILLS -->
+<section id="work" style="background:#f1ebdd">
+  <div class="container">
+    <div class="sec-head">
+      <span class="arabic">أعمالي</span>
+      <h2>What I Do</h2>
+      <div class="line"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Educator</h3>
+        <p>Passionate about teaching physics &amp; science with clarity, patience and real-world connections.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✒️</div>
+        <h3>Calligrapher</h3>
+        <p>Artistic Arabic &amp; Islamic calligraphy — from elegant naskh to expressive thuluth.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📷</div>
+        <h3>Photographer</h3>
+        <p>Documenting culture, people and moments with a thoughtful, contemplative eye.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COACHING -->
+<section id="coaching">
+  <div class="container">
+    <div class="coach">
+      <span class="arabic">الفيزياء</span>
+      <h3>WikiFizik Coaching Centre</h3>
+      <p>As founder &amp; owner, I lead a coaching centre focused on building strong physics fundamentals. Students and parents are welcome to reach out through the channels below or visit the site directly.</p>
+      <a class="btn btn-gold" href="https://www.wikifizik.co.in" target="_blank" rel="noopener">Visit WikiFizik.co.in →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT / SOCIAL -->
+<section id="connect" style="background:#f1ebdd">
+  <div class="container">
+    <div class="sec-head">
+      <span class="arabic">تواصل معي</span>
+      <h2>Connect / Enquire</h2>
+      <div class="line"></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);max-width:520px;margin:0 auto 2rem;">
+      For lessons, calligraphy commissions, photography projects, or coaching enquiries — reach me on any platform below.
+    </p>
+    <div class="social-grid">
+      <a class="social" href="https://www.facebook.com/nurullasir" target="_blank" rel="noopener">
+        <span class="s-icon fb">f</span><span class="name">Facebook</span><span class="handle">@nurullasir</span>
+      </a>
+      <a class="social" href="https://www.instagram.com/nurulla1441" target="_blank" rel="noopener">
+        <span class="s-icon ig">📷</span><span class="name">Instagram</span><span class="handle">@nurulla1441</span>
+      </a>
+      <a class="social" href="https://x.com/nurulla1441" target="_blank" rel="noopener">
+        <span class="s-icon x">𝕏</span><span class="name">X / Twitter</span><span class="handle">@nurulla1441</span>
+      </a>
+      <a class="social" href="https://t.me/nurullasir" target="_blank" rel="noopener">
+        <span class="s-icon tg">✈</span><span class="name">Telegram</span><span class="handle">@nurullasir</span>
+      </a>
+      <a class="social" href="https://www.linkedin.com/in/nurulla1441" target="_blank" rel="noopener">
+        <span class="s-icon in">in</span><span class="name">LinkedIn</span><span class="handle">@nurulla1441</span>
+      </a>
+      <a class="social" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+        <span class="s-icon wa">📞</span><span class="name">WhatsApp</span><span class="handle">+91 XXXXXXXXXX</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="arabic">شكراً</span>
+  <p>© 2026 MD Nurulla Mollick · Educator, Calligrapher &amp; Photographer</p>
+  <p>Founder — <a href="https://www.wikifizik.co.in" target="_blank" rel="noopener">WikiFizik Coaching Centre</a></p>
+</footer>
+
+</body>
+</html>   
